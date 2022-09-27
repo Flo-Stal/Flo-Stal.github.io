@@ -2,19 +2,19 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OhMyFood</title>
-    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         <!-- header -->
         <header>
             <div class="logo">
-                <img src="./public/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+                <img src="./public/images/logo/ohmyfood.png" alt="Logo Ohmyfood" />
             </div>
         </header>
 
@@ -35,10 +35,93 @@
         <!-- Proffer -->
         <section class="proffer">
             <p class="proffer__menu">Réservez le menu qui vous convient</p>
-            <p class="proffer__restaurants">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <p class="proffer__restaurants">
+                Découvrez des restaurants d'exception, sélectionnés par nos soins.
+            </p>
             <a class="proffer__explore" href="#">Explorer nos restaurants</a>
         </section>
 
+        <!-- how -->
+        <h2 class="how__title">Fonctionnement</h2>
+        <section class="how">
+            <div class="how__box">
+                <div class="how__box__number">1</div>
+                <i class="fas fa-tablet-alt"></i>Choisissez un restaurant
+            </div>
+            <div class="how__box">
+                <div class="how__box__number">2</div>
+                <i class="fas fa-list-ul"></i>Composez votre menu
+            </div>
+            <div class="how__box">
+                <div class="how__box__number">3</div>
+                <i class="fas fa-store"></i>Dégustez au restaurant
+            </div>
+        </section>
+
+        <!--Restaurants -->
+        <section class="restaurant">
+            <div class="restaurant__main">
+                <div class="restaurant__title">
+                    <h2>Restaurants</h2>
+                </div>
+                <div class="restaurant__card">
+                    <div class="card__btn">Nouveau</div>
+                    <a href="#">
+                        <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            alt="restaurant la palette du gout" />
+                        <div class="heart">
+                            <h4>La palette du goût</h4>
+                            <div class="heart__icon">
+                                <span><i class="fill far fa-heart fa-2x"></i></span>
+                            </div>
+                        </div>
+                        <p>Ménilmontant</p>
+                    </a>
+                </div>
+                <div class="restaurant__card">
+                    <div class="card__btn">Nouveau</div>
+                    <a href="#">
+                        <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                            alt="restaurant la note enchantee" />
+                        <div class="heart">
+                            <h4>La note enchantée</h4>
+                            <div class="heart__icon">
+                                <span><i class="fill far fa-heart fa-2x"></i></span>
+                            </div>
+                        </div>
+                        <p>Charonne</p>
+                    </a>
+                </div>
+                <div class="restaurant__card">
+                    <div class="card__btn">Nouveau</div>
+                    <a href="#">
+                        <img src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="restaurant a la francaise" />
+                        <div class="heart">
+                            <h4>A la française</h4>
+                            <div class="heart__icon">
+                                <span><i class="fill far fa-heart fa-2x"></i></span>
+                            </div>
+                        </div>
+                        <p>Cité Rouge</p>
+                    </a>
+                </div>
+                <div class="restaurant__card">
+                    <div class="card__btn">Nouveau</div>
+                    <a href="#">
+                        <img src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="Restaurant Le délice des sens" />
+                        <div class="heart">
+                            <h4>Le délice des sens</h4>
+                            <div class="heart__icon">
+                                <span><i class="fill far fa-heart fa-2x"></i></span>
+                            </div>
+                        </div>
+                        <p>Folie-Méricourt</p>
+                    </a>
+                </div>
+            </div>
+        </section>
 
         <!-- Footer -->
         <footer>
@@ -47,7 +130,9 @@
                 <h3><i class="fas fa-utensils"></i>Proposer un restaurant</h3>
             </a>
             <a href="#">
-                <h3><span><i class="fas fa-hands-helping"></i></span>Devenir partenaire</h3>
+                <h3>
+                    <span><i class="fas fa-hands-helping"></i></span>Devenir partenaire
+                </h3>
             </a>
             <a href="#">
                 <h3>Mentions légales</h3>
@@ -57,11 +142,6 @@
             </a>
         </footer>
     </main>
-
-
-
-
-
 </body>
 
 </html>
