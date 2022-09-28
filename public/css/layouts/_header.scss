@@ -7,9 +7,17 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
 
         img {
             max-width: 200px;
         }
+
+            i {
+                font-size: 20px;
+                position: absolute;
+                top: 25%;
+                left: 10%;
+            }
     }
 }
