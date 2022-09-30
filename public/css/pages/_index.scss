@@ -10,6 +10,24 @@
     i {
         padding-right: 15px;
     }
+
+        input {
+            background-color: #eaeaea;
+            border: none;
+            width: 120px;
+        }
+        
+            input:focus
+            {
+                outline: none;
+            }
+
+                ::placeholder
+                {
+                    color: black;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
 }
 
 /* proffer */
@@ -357,8 +375,7 @@ main {
 
 
 .fill:hover {
-    animation: heart 0.3s ease-in-out;
-    opacity: 1;
+    animation: heart 300ms ease-in-out;
     background: $gradient;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -367,3 +384,65 @@ main {
 
 
 
+/* animations menu resto*/
+
+@keyframes meals {
+    0% {
+        transform: scaleX(0) scaleY(0);
+    }
+    100% {
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+.starter .meals {
+    animation: meals 2000ms;
+}
+
+.dish .meals {
+    animation: meals 4000ms;
+}
+
+.dessert .meals {
+    animation: meals 6000ms;
+}
+
+/* animations loader*/
+
+@keyframes loader-position {
+    0% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    z-index: -1;
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    cursor: wait;
+    position: fixed;
+    z-index: 100;
+    animation: loader-position 3s linear 3s forwards;
+
+            &__letters {
+                font-size: 65px;
+                font-family: 'Shrikhand';
+                animation: loader 3s infinite forwards;
+            }
+}
