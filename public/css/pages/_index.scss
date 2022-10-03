@@ -20,6 +20,9 @@
             input:focus
             {
                 outline: none;
+                font-family: "Roboto", sans-serif;
+                font-weight: bold;
+                font-size: 16px;
             }
 
                 ::placeholder
@@ -31,7 +34,6 @@
 }
 
 /* proffer */
-
 .proffer {
     display: flex;
     flex-direction: column;
@@ -71,7 +73,6 @@
 
 
 /* how*/
-
 .how__title {
     margin: 0 0 20px 22px;
 }
@@ -130,7 +131,6 @@
 }
 
 /* restaurants */
-
 .restaurant__main {
     background: #f2f2f2;
     display: flex;
@@ -225,7 +225,6 @@ main {
 }
 
 /* starters*/
-
 .starter {
         padding: 20px 15px 0 15px;
 
@@ -248,20 +247,18 @@ main {
                 margin-bottom: 15px;
                 padding: 15px 0 0 10px;
                 font-size: 20px;
-                
             }
 
                 .meals__infos {
                     display: flex;
                     justify-content: space-between;
-                    padding-top: 15px;
+                    padding: 15px 15px 15px 0;
                     font-size: 15px;
                 }
 
 }
 
 /* dishies*/
-
 .dish {
     padding: 20px 15px 0 15px;
 
@@ -290,7 +287,7 @@ main {
                 .meals__infos {
                     display: flex;
                     justify-content: space-between;
-                    padding-top: 15px;
+                    padding: 15px 15px 15px 0;
                     font-size: 15px;
                 }
 
@@ -298,7 +295,6 @@ main {
 
 
 /* desserts*/
-
 .dessert {
         padding: 20px 15px 0 15px;
 
@@ -327,14 +323,13 @@ main {
                 .meals__infos {
                     display: flex;
                     justify-content: space-between;
-                    padding-top: 15px;
+                    padding: 15px 15px 15px 0;
                     font-size: 15px;
                 }
 
 }
 
 /* order boutton*/
-
 .order {
     display: flex;
     justify-content: center;
@@ -358,9 +353,7 @@ main {
 
 }
 
-/* animations heart*/
-
-
+/* animation heart*/
 @keyframes heart {
     0% {
     opacity: 0;
@@ -384,8 +377,7 @@ main {
 
 
 
-/* animations menu resto*/
-
+/* animation menu resto*/
 @keyframes meals {
     0% {
         transform: scaleX(0) scaleY(0);
@@ -407,8 +399,7 @@ main {
     animation: meals 6000ms;
 }
 
-/* animations loader*/
-
+/* animation loader*/
 @keyframes loader-position {
     0% {
     opacity: 1;
@@ -438,7 +429,7 @@ main {
     cursor: wait;
     position: fixed;
     z-index: 100;
-    animation: loader-position 3s linear 3s forwards;
+    animation: loader-position 1s linear 3s forwards;
 
             &__letters {
                 font-size: 65px;
@@ -446,3 +437,87 @@ main {
                 animation: loader 3s infinite forwards;
             }
 }
+
+
+/* animation meals */
+.meals {
+    position: relative;
+    overflow: hidden;
+    transition: padding-right 500ms ease-in-out;
+
+    .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #99E2D0;
+        width: 35px;
+        height: 63px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        position: absolute;
+        padding: 10px;
+        right: -50px;
+        top: 0;
+        opacity: 0;
+        transition: transform 500ms ease-in-out;  
+    }
+
+        .meals__infos p {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 15px;
+        }
+
+            i {
+                color: white;
+                font-size: 30px;
+            }
+
+                span {
+                    font-size: 15px;
+                }
+
+                    h4 {
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            font-size: 17px;
+                    }
+
+    &:hover .check {
+        opacity: 1;
+        transform: translate(-50px);
+    }
+    
+        &:hover {
+            padding-right: 50px;
+        }
+
+            &:hover i {
+                transform: rotate(360deg);   
+                    transition: transform 1000ms;
+            }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
