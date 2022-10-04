@@ -296,7 +296,7 @@ main {
 
 /* desserts*/
 .dessert {
-        padding: 20px 15px 0 15px;
+        padding: 20px 15px 15px 15px;
 
     .dessert__title {
         text-transform : uppercase;
@@ -333,6 +333,7 @@ main {
 .order {
     display: flex;
     justify-content: center;
+    background: #F6F6F6;
 }
 
 .menu__order {
@@ -434,7 +435,7 @@ main {
             &__letters {
                 font-size: 65px;
                 font-family: 'Shrikhand';
-                animation: loader 3s infinite forwards;
+                animation: loader 3s infinite;
             }
 }
 
